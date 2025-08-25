@@ -4,16 +4,11 @@ def get_data_details(loc):
     # intel column descriptions
     intel_col_desc = {
         "malware_name": "The name of the malware.",
-        "environment_description": "Description of the environment where the malware was tested, giving context for analysis.",
         "size": "The size of the malware in bytes, useful for understanding its footprint and operational characteristics.",
-        "type": "File type information including internal structure, binary format, and executable type, helping in detailed malware analysis.",
         "md5": "MD5 hash of the file, used for identification and integrity verification.",
         "sha1": "SHA1 hash of the file, providing a cryptographic fingerprint for tracking and correlation.",
         "sha256": "SHA256 hash of the file, ensuring data integrity and supporting threat intelligence operations.",
-        "sha512": "SHA512 hash of the file, serving as a unique digital fingerprint for hybrid threat intelligence analysis.",
         "ssdeep": "SSDEEP fuzzy hash for similarity-based file comparison and detection of malware variants.",
-        "vx_family": "Classification of malware based on behavior and characteristics, aiding threat analysis.",
-        "mitre_attcks": "yes it is spelled mitre_attcks without an a, Information about adversary tactics, techniques, and procedures using the MITRE ATT&CK framework.",
         "last_analysis_results": "Aggregated antivirus engine results, providing insights into malware behavior and detection.",
         "type_extension": "The file extension of the malware, assisting in threat identification and IOC correlation.",
         "tlsh": "TLSH hash for efficient file comparison and detection of identical or similar malware.",
